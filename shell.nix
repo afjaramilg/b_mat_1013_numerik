@@ -3,14 +3,17 @@ let
 in pkgs.mkShell {
   packages = [
     (pkgs.python3.withPackages (python-pkgs: [
+      python-pkgs.notebook
+      python-pkgs.ipython
       python-pkgs.numpy
       python-pkgs.matplotlib
       python-pkgs.ipykernel
     ]))
   ];
     shellHook = ''
-    alias configure-jupyter="python -m ipykernel install --user \
-       --name="b_mat_1013_numerik-kernel" \
-       --display-name="b_mat_1013_numerik""
-    '';
+            echo "Starting jupyter notebook server"
+            jupyter notebook
+       '';
+
+
 }

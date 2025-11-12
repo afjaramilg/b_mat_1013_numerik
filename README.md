@@ -13,7 +13,5 @@ python -m ipykernel install --user \
 fuer nix-os user:
 ```bash
 nix-shell shell.nix
-python -m ipykernel install --user \
-       --name="b_mat_1013_numerik-kernel" \
-       --display-name="b_mat_1013_numerik"
 ```
+Im Browser oeffnet sich daraufhin die Jupyter Notebook Seite unter localhost:8888
