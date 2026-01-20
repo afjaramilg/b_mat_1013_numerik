@@ -14,4 +14,5 @@ fuer nix-os user:
 ```bash
 nix-shell shell.nix
 ```
-Im Browser oeffnet sich daraufhin die Jupyter Notebook Seite unter localhost:8888
+
+Daraufhin kann entweder der Jupyter Server gestartet werden oder die Datei ueber nvim geoffnet werden.

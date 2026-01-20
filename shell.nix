@@ -8,12 +8,10 @@ in pkgs.mkShell {
       python-pkgs.numpy
       python-pkgs.matplotlib
       python-pkgs.ipykernel
+      python-pkgs.pynvim
+      python-pkgs.jupyter-client
+      python-pkgs.requests
+      python-pkgs.websocket-client
     ]))
   ];
-    shellHook = ''
-            echo "Starting jupyter notebook server"
-            jupyter notebook
-       '';
-
-
 }
